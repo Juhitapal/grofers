@@ -164,7 +164,7 @@ function grocery_scripts() {
 	wp_enqueue_script( 'grocery-flex-slider-js', get_template_directory_uri() . '/js/jquery.flexslider.js');
 	wp_enqueue_script( 'grocery-minicart-js', get_template_directory_uri() . '/js/minicart.min.js' );
 	wp_enqueue_script( 'grocery-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js');
-	wp_enqueue_script( 'grocery-custom-js', get_template_directory_uri() . '/js/custom.js');
+	wp_enqueue_script( 'grocery-custom-js', get_template_directory_uri() . '/js/custom.js',array(),null,true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
