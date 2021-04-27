@@ -133,7 +133,7 @@ get_header();
 					<div class="wthree_banner_bottom_left_grid">
 						<img src="<?php echo get_template_directory_uri().'/images/4.jpg'; ?>" alt=" " class="img-responsive" />
 						<div class="wthree_banner_bottom_left_grid_pos">
-							<h4>Discount Offer <span>25%</span></h4>
+							<h4>Discountd Offer <span>25%</span></h4>
 						</div>
 					</div>
 				</div>
