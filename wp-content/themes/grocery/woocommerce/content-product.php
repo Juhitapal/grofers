@@ -49,20 +49,9 @@ if (empty($product) || !$product->is_visible()) {
                             <?php } ?>
                         </div>
                         <div class="snipcart-details">
-                            <form action="#" class="add-to-cart-form" method="post">
-                                <fieldset>
-                                    <input type="hidden" name="cmd" value="_cart"/>
-                                    <input type="hidden" name="add" value="1"/>
-                                    <input type="hidden" name="business" value=" "/>
-                                    <input type="hidden" name="item_name" value="knorr instant soup"/>
-                                    <input type="hidden" name="amount" value="3.00"/>
-                                    <input type="hidden" name="discount_amount" value="1.00"/>
-                                    <input type="hidden" name="currency_code" value="USD"/>
-                                    <input type="hidden" name="return" value=" "/>
-                                    <input type="hidden" name="cancel_return" value=" "/>
-                                    <input type="submit" name="submit" value="Add to cart" class="button"/>
-                                </fieldset>
-                            </form>
+                            
+                            <a href="<?php echo $product->add_to_cart_url() ?>" value="<?php echo esc_attr( $product->get_id() ); ?>" class="ajax_add_to_cart add_to_cart_button" data-product_id="<?php echo get_the_ID(); ?>" data-product_sku="<?php echo esc_attr($product->get_sku()); ?>" aria-label="Add “<?php the_title_attribute() ?>” to your cart"> Add to Cart </a>
+
                         </div>
                     </div>
                 </figure>
