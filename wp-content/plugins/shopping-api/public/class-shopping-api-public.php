@@ -95,7 +95,7 @@ class Shopping_Api_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
+		echo 'test...';
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/shopping-api-public.js', array( 'jquery' ), $this->version, false );
 
 	}
